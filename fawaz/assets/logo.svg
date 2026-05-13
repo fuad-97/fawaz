@@ -1,0 +1,15 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Al Amari car rental logo">
+  <rect width="512" height="512" rx="136" fill="#0D1B2A"/>
+  <circle cx="256" cy="256" r="202" fill="#C9A84C"/>
+  <circle cx="256" cy="256" r="174" fill="#0D1B2A"/>
+  <path d="M149 356L236 142C244 123 268 123 276 142L363 356H310L292 309H219L201 356H149Z" fill="#C9A84C"/>
+  <path d="M238 263H273L256 219L238 263Z" fill="#0D1B2A"/>
+  <path d="M183 386C224 346 288 346 329 386" stroke="#C9A84C" stroke-width="22" stroke-linecap="round"/>
+  <path d="M167 270C185 242 214 226 256 226C298 226 327 242 345 270" stroke="#F0E4B8" stroke-width="18" stroke-linecap="round"/>
+  <path d="M155 283H357L340 324H172L155 283Z" fill="#F0E4B8"/>
+  <path d="M196 252H316L339 283H173L196 252Z" fill="#C9A84C"/>
+  <circle cx="208" cy="324" r="20" fill="#0D1B2A"/>
+  <circle cx="304" cy="324" r="20" fill="#0D1B2A"/>
+  <circle cx="208" cy="324" r="8" fill="#F0E4B8"/>
+  <circle cx="304" cy="324" r="8" fill="#F0E4B8"/>
+</svg>

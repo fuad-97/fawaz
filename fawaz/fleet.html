@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أسطول السيارات | العماري لتأجير السيارات في عمان</title>
+  <meta name="description" content="تصفح أسطول العماري لتأجير السيارات في عمان — سيارات اقتصادية وعائلية وSUV وفخمة. تأجير يومي وشهري. Rent a car Oman.">
+  <meta name="keywords" content="تأجير سيارات عمان, سيارات للإيجار عمان, تأجير SUV عمان, تأجير Toyota Land Cruiser عمان, Car rental Muscat">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="TODO_WEBSITE_URL/fleet.html">
+  <meta property="og:title"       content="أسطول السيارات — العماري لتأجير السيارات">
+  <meta property="og:description" content="تصفح مجموعتنا من السيارات للإيجار في سلطنة عمان.">
+  <meta property="og:url"         content="TODO_WEBSITE_URL/fleet.html">
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"الرئيسية","item":"TODO_WEBSITE_URL"},
+    {"@type":"ListItem","position":2,"name":"أسطول السيارات","item":"TODO_WEBSITE_URL/fleet.html"}
+  ]}
+  </script>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar scrolled" id="navbar">
+  <div class="container">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <img class="brand-logo" src="assets/logo.svg" alt="العماري لتأجير السيارات">
+        <div class="brand-text">
+          <span class="brand-name-nav">العماري</span>
+          <span class="brand-sub-nav">لتأجير السيارات</span>
+        </div>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html"    class="nav-link">الرئيسية</a></li>
+        <li><a href="fleet.html"    class="nav-link active">السيارات</a></li>
+        <li><a href="services.html" class="nav-link">الخدمات</a></li>
+        <li><a href="about.html"    class="nav-link">من نحن</a></li>
+        <li><a href="faq.html"      class="nav-link">الأسئلة الشائعة</a></li>
+        <li><a href="contact.html"  class="nav-link">اتصل بنا</a></li>
+      </ul>
+      <div class="nav-cta"><a href="booking.html" class="btn btn-primary btn-sm">🗓 احجز الآن</a></div>
+      <button class="hamburger" id="hamburger" aria-label="فتح القائمة"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<!-- Page Header -->
+<div class="page-header bg-gray">
+  <div class="container page-header-inner">
+    <nav class="breadcrumb" aria-label="مسار التنقل">
+      <a href="index.html">الرئيسية</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>أسطول السيارات</span>
+    </nav>
+    <h1>أسطول <span>السيارات</span></h1>
+    <p>تصفح مجموعتنا المتنوعة من السيارات للإيجار في سلطنة عمان — اقتصادية، عائلية، SUV وفخمة.</p>
+  </div>
+</div>
+
+<!-- Fleet -->
+<section class="section section-bg">
+  <div class="container">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">الكل</button>
+      <button class="filter-btn" data-filter="economy">اقتصادية</button>
+      <button class="filter-btn" data-filter="family">عائلية</button>
+      <button class="filter-btn" data-filter="suv">SUV</button>
+      <button class="filter-btn" data-filter="corporate">شركات</button>
+      <button class="filter-btn" data-filter="tourist">سياح</button>
+    </div>
+
+    <div class="cars-grid">
+      <!-- 1: Toyota Yaris -->
+      <div class="car-card fade-up" data-tags="economy,daily,tourist">
+        <div class="car-card-image">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/2020%20Toyota%20Yaris%20LE%20Hatchback.jpg?width=900" alt="Toyota Yaris" loading="lazy" decoding="async">
+          <span class="car-type-badge">اقتصادية</span>
+          <span class="car-avail">متاحة</span>
+        </div>
+        <div class="car-card-body">
+          <h3>Toyota Yaris</h3>
+          <div class="car-specs">
+            <span class="car-spec">👥 5 ركاب</span>
+            <span class="car-spec">⚙️ أوتوماتيك</span>
+            <span class="car-spec">⛽ اقتصادية</span>
+          </div>
+          <div class="car-tags">
+            <span class="car-tag">أفراد</span>
+            <span class="car-tag">يومي</span>
+            <span class="car-tag">سياح</span>
+          </div>
+          <div class="car-price"><span class="price-text">السعر حسب مدة الحجز والتوفر</span></div>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-outline-gold btn-sm" style="flex:1"
+              onclick="openCarModal({name:'Toyota Yaris',type:'سيدان',passengers:'5',transmission:'أوتوماتيك',category:'اقتصادية',desc:'سيارة اقتصادية مريحة مناسبة للتنقل اليومي داخل المدينة أو للسياح الذين يرغبون في التنقل بكفاءة وبتكلفة معقولة.',emoji:'🚗'})">
+              📋 التفاصيل
+            </button>
+            <button class="btn btn-whatsapp btn-sm" style="flex:1" onclick="bookCar('Toyota Yaris')">💬 احجز</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2: Toyota Corolla -->
+      <div class="car-card fade-up delay-1" data-tags="economy,family,daily">
+        <div class="car-card-image">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Toyota%20Corolla%20Limousine%20Hybrid%20Genf%202019%201Y7A5576.jpg?width=900" alt="Toyota Corolla" loading="lazy" decoding="async">
+          <span class="car-type-badge">عائلية</span>
+          <span class="car-avail">متاحة</span>
+        </div>
+        <div class="car-card-body">
+          <h3>Toyota Corolla</h3>
+          <div class="car-specs">
+            <span class="car-spec">👥 5 ركاب</span>
+            <span class="car-spec">⚙️ أوتوماتيك</span>
+          </div>
+          <div class="car-tags">
+            <span class="car-tag">عائلة</span>
+            <span class="car-tag">أفراد</span>
+            <span class="car-tag">شهري</span>
+          </div>
+          <div class="car-price"><span class="price-text">السعر حسب مدة الحجز والتوفر</span></div>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-outline-gold btn-sm" style="flex:1"
+              onclick="openCarModal({name:'Toyota Corolla',type:'سيدان',passengers:'5',transmission:'أوتوماتيك',category:'عائلية',desc:'سيارة مريحة وموثوقة من الأكثر مبيعاً في العالم. مناسبة للعائلات والأفراد والاستخدام الشهري.',emoji:'🚙'})">
+              📋 التفاصيل
+            </button>
+            <button class="btn btn-whatsapp btn-sm" style="flex:1" onclick="bookCar('Toyota Corolla')">💬 احجز</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3: Nissan Sunny -->
+      <div class="car-card fade-up delay-2" data-tags="economy,daily">
+        <div class="car-card-image">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Nissan%20Sunny%20XL%20sedan,%20front%20view.jpg?width=900" alt="Nissan Sunny" loading="lazy" decoding="async">
+          <span class="car-type-badge">اقتصادية</span>
+          <span class="car-avail">متاحة</span>
+        </div>
+        <div class="car-card-body">
+          <h3>Nissan Sunny</h3>
+          <div class="car-specs">
+            <span class="car-spec">👥 5 ركاب</span>
+            <span class="car-spec">⚙️ أوتوماتيك</span>
+          </div>
+          <div class="car-tags">
+            <span class="car-tag">أفراد</span>
+            <span class="car-tag">اقتصادية</span>
+          </div>
+          <div class="car-price"><span class="price-text">السعر حسب مدة الحجز والتوفر</span></div>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-outline-gold btn-sm" style="flex:1"
+              onclick="openCarModal({name:'Nissan Sunny',type:'سيدان',passengers:'5',transmission:'أوتوماتيك',category:'اقتصادية',desc:'سيارة عملية واقتصادية مناسبة للتنقل اليومي بتكلفة منخفضة ومصرف وقود ممتاز.',emoji:'🚗'})">
+              📋 التفاصيل
+            </button>
+            <button class="btn btn-whatsapp btn-sm" style="flex:1" onclick="bookCar('Nissan Sunny')">💬 احجز</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4: Hyundai Accent -->
+      <div class="car-card fade-up delay-3" data-tags="economy,daily,tourist">
+        <div class="car-card-image">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/2018%20Hyundai%20Accent%20(United%20States).jpg?width=900" alt="Hyundai Accent" loading="lazy" decoding="async">
+          <span class="car-type-badge">اقتصادية</span>
+          <span class="car-avail">متاحة</span>
+        </div>
+        <div class="car-card-body">
+          <h3>Hyundai Accent</h3>
+          <div class="car-specs">
+            <span class="car-spec">👥 5 ركاب</span>
+            <span class="car-spec">⚙️ أوتوماتيك</span>
+          </div>
+          <div class="car-tags">
+            <span class="car-tag">أفراد</span>
+            <span class="car-tag">سياح</span>
+          </div>
+          <div class="car-price"><span class="price-text">السعر حسب مدة الحجز والتوفر</span></div>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-outline-gold btn-sm" style="flex:1"
+              onclick="openCarModal({name:'Hyundai Accent',type:'سيدان',passengers:'5',transmission:'أوتوماتيك',category:'اقتصادية',desc:'سيارة خفيفة وموفرة للوقود، خيار مثالي للتنقل اليومي والرحلات القصيرة.',emoji:'🚘'})">
+              📋 التفاصيل
+            </button>
+            <button class="btn btn-whatsapp btn-sm" style="flex:1" onclick="bookCar('Hyundai Accent')">💬 احجز</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5: Kia Sportage -->
+      <div class="car-card fade-up" data-tags="suv,family,tourist">
+        <div class="car-card-image">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/2009%20Kia%20Sportage%20LX.jpg?width=900" alt="Kia Sportage" loading="lazy" decoding="async">
+          <span class="car-type-badge">SUV</span>
+          <span class="car-avail">متاحة</span>
+        </div>
+        <div class="car-card-body">
+          <h3>Kia Sportage</h3>
+          <div class="car-specs">
+            <span class="car-spec">👥 5 ركاب</span>
+            <span class="car-spec">⚙️ أوتوماتيك</span>
+            <span class="car-spec">🏔️ دفع رباعي</span>
+          </div>
+          <div class="car-tags">
+            <span class="car-tag">عائلة</span>
+            <span class="car-tag">سياح</span>
+            <span class="car-tag">SUV</span>
+          </div>
+          <div class="car-price"><span class="price-text">السعر حسب مدة الحجز والتوفر</span></div>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-outline-gold btn-sm" style="flex:1"
+              onclick="openCarModal({name:'Kia Sportage',type:'SUV',passengers:'5',transmission:'أوتوماتيك',category:'SUV عائلية',desc:'سيارة SUV عائلية مريحة ومتعددة الاستخدامات. مناسبة للرحلات العائلية والسياحية واستكشاف مناطق عمان.',emoji:'🚐'})">
+              📋 التفاصيل
+            </button>
+            <button class="btn btn-whatsapp btn-sm" style="flex:1" onclick="bookCar('Kia Sportage')">💬 احجز</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6: Mitsubishi Pajero -->
+      <div class="car-card fade-up delay-1" data-tags="suv,family,corporate,tourist">
+        <div class="car-card-image">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pajero%20front.jpg?width=900" alt="Mitsubishi Pajero" loading="lazy" decoding="async">
+          <span class="car-type-badge">SUV</span>
+          <span class="car-avail">متاحة</span>
+        </div>
+        <div class="car-card-body">
+          <h3>Mitsubishi Pajero</h3>
+          <div class="car-specs">
+            <span class="car-spec">👥 7 ركاب</span>
+            <span class="car-spec">⚙️ أوتوماتيك</span>
+            <span class="car-spec">🏔️ دفع رباعي</span>
+          </div>
+          <div class="car-tags">
+            <span class="car-tag">عائلة</span>
+            <span class="car-tag">شركات</span>
+            <span class="car-tag">سياح</span>
+          </div>
+          <div class="car-price"><span class="price-text">السعر حسب مدة الحجز والتوفر</span></div>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-outline-gold btn-sm" style="flex:1"
+              onclick="openCarModal({name:'Mitsubishi Pajero',type:'SUV',passengers:'7',transmission:'أوتوماتيك',category:'SUV قوية',desc:'سيارة رياضية قوية تناسب رحلات الطبيعة والمناطق الوعرة واستكشاف سلطنة عمان. مناسبة للعائلات الكبيرة والشركات.',emoji:'🚙'})">
+              📋 التفاصيل
+            </button>
+            <button class="btn btn-whatsapp btn-sm" style="flex:1" onclick="bookCar('Mitsubishi Pajero')">💬 احجز</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7: Toyota Land Cruiser -->
+      <div class="car-card fade-up delay-2" data-tags="suv,corporate,tourist">
+        <div class="car-card-image">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Toyota%20Landcruiser%20(38030428366).jpg?width=900" alt="Land Cruiser" loading="lazy" decoding="async">
+          <span class="car-type-badge">فخمة</span>
+          <span class="car-avail">متاحة</span>
+        </div>
+        <div class="car-card-body">
+          <h3>Toyota Land Cruiser</h3>
+          <div class="car-specs">
+            <span class="car-spec">👥 7 ركاب</span>
+            <span class="car-spec">⚙️ أوتوماتيك</span>
+            <span class="car-spec">🏔️ دفع رباعي</span>
+          </div>
+          <div class="car-tags">
+            <span class="car-tag">شركات</span>
+            <span class="car-tag">سياح</span>
+            <span class="car-tag">SUV فخمة</span>
+          </div>
+          <div class="car-price"><span class="price-text">السعر حسب مدة الحجز والتوفر</span></div>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-outline-gold btn-sm" style="flex:1"
+              onclick="openCarModal({name:'Toyota Land Cruiser',type:'SUV فخمة',passengers:'7',transmission:'أوتوماتيك',category:'فخمة / شركات',desc:'الأيقونة الأشهر في سلطنة عمان. مناسبة للشركات الباحثة عن الوقار والفخامة وللسياح الراغبين في استكشاف أجمل مناطق عمان.',emoji:'🚙'})">
+              📋 التفاصيل
+            </button>
+            <button class="btn btn-whatsapp btn-sm" style="flex:1" onclick="bookCar('Toyota Land Cruiser')">💬 احجز</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8: Lexus SUV -->
+      <div class="car-card fade-up delay-3" data-tags="suv,corporate">
+        <div class="car-card-image">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/2016%20Lexus%20RX%20200t%20front%20view.jpg?width=900" alt="Lexus SUV" loading="lazy" decoding="async">
+          <span class="car-type-badge">فاخرة</span>
+          <span class="car-avail">متاحة</span>
+        </div>
+        <div class="car-card-body">
+          <h3>Lexus SUV</h3>
+          <div class="car-specs">
+            <span class="car-spec">👥 5-7 ركاب</span>
+            <span class="car-spec">⚙️ أوتوماتيك</span>
+          </div>
+          <div class="car-tags">
+            <span class="car-tag">فاخرة</span>
+            <span class="car-tag">شركات</span>
+          </div>
+          <div class="car-price"><span class="price-text">السعر حسب مدة الحجز والتوفر</span></div>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-outline-gold btn-sm" style="flex:1"
+              onclick="openCarModal({name:'Lexus SUV',type:'SUV فاخرة',passengers:'5-7',transmission:'أوتوماتيك',category:'فاخرة / شركات',desc:'خيار الفخامة والرقي للمديرين وكبار الضيوف. سيارة Lexus توفر أعلى مستويات الراحة والأناقة.',emoji:'⭐'})">
+              📋 التفاصيل
+            </button>
+            <button class="btn btn-whatsapp btn-sm" style="flex:1" onclick="bookCar('Lexus SUV')">💬 احجز</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Car Modal -->
+<div class="modal-overlay" id="carModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h3 id="modal-car-name">اسم السيارة</h3>
+      <button class="modal-close" onclick="closeCarModal()" aria-label="إغلاق">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-image">
+        <div class="modal-placeholder" id="modal-car-emoji" style="font-size:4rem;display:flex;align-items:center;justify-content:center;height:210px;background:linear-gradient(135deg,#0d1b2a,#1e3044)">🚗</div>
+      </div>
+      <div class="modal-specs">
+        <div class="modal-spec"><span class="spec-lbl">النوع</span><span class="spec-val" id="modal-car-type">—</span></div>
+        <div class="modal-spec"><span class="spec-lbl">عدد الركاب</span><span class="spec-val" id="modal-car-passengers">—</span></div>
+        <div class="modal-spec"><span class="spec-lbl">ناقل الحركة</span><span class="spec-val" id="modal-car-transmission">—</span></div>
+        <div class="modal-spec"><span class="spec-lbl">الفئة</span><span class="spec-val" id="modal-car-category">—</span></div>
+      </div>
+      <p class="modal-desc" id="modal-car-desc"></p>
+      <div style="background:var(--gray-50);border-radius:8px;padding:14px;margin-bottom:8px;font-size:0.88rem;color:var(--text-muted)">
+        📋 <strong>الشروط العامة:</strong> يشترط تقديم بطاقة هوية سارية ورخصة قيادة. العميل مسؤول عن المخالفات خلال فترة التأجير. السعر يُحدد حسب مدة الحجز والتوفر.
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button id="modal-book-btn" class="btn btn-whatsapp btn-full btn-lg">
+        💬 استفسر عن هذه السيارة عبر واتساب
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner fade-up">
+      <h2>لم تجد السيارة المناسبة؟</h2>
+      <p>تواصل معنا عبر واتساب وسنساعدك في اختيار أفضل خيار يناسب احتياجاتك وميزانيتك.</p>
+      <div class="cta-actions">
+        <a href="https://wa.me/TODO_WHATSAPP?text=مرحبا،%20أريد%20الاستفسار%20عن%20سيارة%20مناسبة%20من%20العماري" target="_blank" class="btn btn-whatsapp btn-lg">💬 تواصل معنا</a>
+        <a href="booking.html" class="btn btn-primary btn-lg">🗓 نموذج الحجز</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-brand-name">العماري لتأجير السيارات</span>
+        <p>شركة متخصصة في تأجير السيارات في سلطنة عمان للأفراد والشركات والسياح.</p>
+        <a href="https://maps.app.goo.gl/ahwhJKdvhMWxH1zr6" target="_blank" class="btn btn-outline-gold btn-sm">📍 موقعنا</a>
+      </div>
+      <div class="footer-col">
+        <h4>روابط سريعة</h4>
+        <nav class="footer-links">
+          <a href="index.html">الرئيسية</a>
+          <a href="fleet.html">أسطول السيارات</a>
+          <a href="services.html">خدماتنا</a>
+          <a href="booking.html">احجز الآن</a>
+          <a href="about.html">من نحن</a>
+          <a href="contact.html">اتصل بنا</a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <h4>خدماتنا</h4>
+        <nav class="footer-links">
+          <a href="services.html">تأجير يومي</a>
+          <a href="services.html">تأجير شهري</a>
+          <a href="corporate.html">تأجير للشركات</a>
+          <a href="tourist.html">تأجير للسياح</a>
+          <a href="faq.html">الأسئلة الشائعة</a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <h4>تواصل معنا</h4>
+        <div class="footer-contact-items">
+          <div class="footer-contact-item"><span class="fi">📞</span><div><span>الهاتف</span><a href="tel:TODO_PHONE">TODO_PHONE</a></div></div>
+          <div class="footer-contact-item"><span class="fi">💬</span><div><span>واتساب</span><a href="https://wa.me/TODO_WHATSAPP" target="_blank">تواصل معنا</a></div></div>
+          <div class="footer-contact-item"><span class="fi">🕐</span><div><span>ساعات العمل</span><span>يومياً 8 ص – 9 م</span></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 العماري لتأجير السيارات. جميع الحقوق محفوظة.</p>
+      <div class="footer-bottom-links">
+        <a href="terms.html">الشروط والأحكام</a>
+        <a href="privacy.html">سياسة الخصوصية</a>
+        <a href="company-information.html">معلومات الشركة</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<div class="whatsapp-float">
+  <span class="wa-tooltip">تواصل عبر واتساب</span>
+  <a href="https://wa.me/TODO_WHATSAPP" target="_blank" class="wa-btn" aria-label="واتساب">
+    <svg width="25" height="25" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
