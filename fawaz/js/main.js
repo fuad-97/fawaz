@@ -62,14 +62,14 @@ const animObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-up, .fade-left').forEach(el => animObserver.observe(el));
 
 /* ===================== WhatsApp Helpers ===================== */
-function buildWhatsAppLink(phone, message) {
+function buildWhatsAppUrl(phone, message) {
   const cleanPhone = String(phone || '').replace(/\D/g, '');
   const encodedMessage = encodeURIComponent(message || '');
   return `https://api.whatsapp.com/send?phone=${cleanPhone}&text=${encodedMessage}`;
 }
 
 function openWhatsApp(message = WA_DEFAULT_MESSAGE, phone = WA_NUMBER) {
-  const url = buildWhatsAppLink(phone, message);
+  const url = buildWhatsAppUrl(phone, message);
   const waWindow = window.open(url, '_blank', 'noopener,noreferrer');
   if (waWindow) waWindow.opener = null;
 }
@@ -82,12 +82,12 @@ window.generalInquiry = function() {
   openWhatsApp('مرحبا، أريد الاستفسار عن خدمات تأجير السيارات من العماري.');
 };
 
-window.buildWhatsAppLink = buildWhatsAppLink;
+window.buildWhatsAppUrl = buildWhatsAppUrl;
 
 document.querySelectorAll('a[data-whatsapp-link]').forEach(link => {
   const phone = link.dataset.whatsappPhone || WA_NUMBER;
   const message = link.dataset.whatsappMessage || WA_DEFAULT_MESSAGE;
-  link.href = buildWhatsAppLink(phone, message);
+  link.href = buildWhatsAppUrl(phone, message);
   link.target = '_blank';
   link.rel = 'noopener noreferrer';
 });
