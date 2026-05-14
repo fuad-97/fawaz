@@ -2,7 +2,8 @@
    العماري لتأجير السيارات - Main JavaScript
    =================================================== */
 
-const WA_NUMBER = '96877074459'; // استبدل بالرقم الفعلي مثل: 96812345678
+const WA_NUMBER = '96877074459';
+const WA_DEFAULT_MESSAGE = 'مرحبا، أريد الاستفسار عن تأجير سيارة من العماري';
 
 const CAR_IMAGES = {
   'Toyota Yaris': 'https://commons.wikimedia.org/wiki/Special:FilePath/2020%20Toyota%20Yaris%20LE%20Hatchback.jpg?width=900',
@@ -61,9 +62,16 @@ const animObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-up, .fade-left').forEach(el => animObserver.observe(el));
 
 /* ===================== WhatsApp Helpers ===================== */
-function openWhatsApp(message) {
-  const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
-  window.open(url, '_blank');
+function buildWhatsAppUrl(phone, message) {
+  const cleanPhone = String(phone || '').replace(/\D/g, '');
+  const encodedMessage = encodeURIComponent(message || '');
+  return `https://api.whatsapp.com/send?phone=${cleanPhone}&text=${encodedMessage}`;
+}
+
+function openWhatsApp(message = WA_DEFAULT_MESSAGE, phone = WA_NUMBER) {
+  const url = buildWhatsAppUrl(phone, message);
+  const waWindow = window.open(url, '_blank', 'noopener,noreferrer');
+  if (waWindow) waWindow.opener = null;
 }
 
 window.bookCar = function(carName) {
@@ -73,6 +81,16 @@ window.bookCar = function(carName) {
 window.generalInquiry = function() {
   openWhatsApp('مرحبا، أريد الاستفسار عن خدمات تأجير السيارات من العماري.');
 };
+
+window.buildWhatsAppUrl = buildWhatsAppUrl;
+
+document.querySelectorAll('a[data-whatsapp-link]').forEach(link => {
+  const phone = link.dataset.whatsappPhone || WA_NUMBER;
+  const message = link.dataset.whatsappMessage || WA_DEFAULT_MESSAGE;
+  link.href = buildWhatsAppUrl(phone, message);
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
+});
 
 /* ===================== Booking Form ===================== */
 const bookingForm = document.getElementById('bookingForm');
