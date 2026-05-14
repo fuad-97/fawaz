@@ -2,7 +2,7 @@
    العماري لتأجير السيارات - Main JavaScript
    =================================================== */
 
-const WA_NUMBER = 'TODO_WHATSAPP'; // استبدل بالرقم الفعلي مثل: 96812345678
+const WA_NUMBER = '96877074459'; // استبدل بالرقم الفعلي مثل: 96812345678
 
 const CAR_IMAGES = {
   'Toyota Yaris': 'https://commons.wikimedia.org/wiki/Special:FilePath/2020%20Toyota%20Yaris%20LE%20Hatchback.jpg?width=900',
